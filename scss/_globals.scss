@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1 {
+  color: $very-light-gray;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}

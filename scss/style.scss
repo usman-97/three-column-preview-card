@@ -1,0 +1,72 @@
+@import "fonts";
+@import "config";
+@import "globals";
+@import "utilities";
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 70%;
+  margin: 10% auto;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    color: $transparent-white;
+
+    img {
+      width: 50px;
+      height: 30px;
+      margin-bottom: 2em;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1em;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 10em;
+    }
+  }
+
+  .card:nth-last-of-type(3) {
+    grid-column: 1;
+    background-color: $brigth-orange;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @include set-button-style($brigth-orange);
+  }
+
+  .card:nth-last-of-type(2) {
+    grid-column: 2;
+    background-color: $dark-cyan;
+    @include set-button-style($dark-cyan);
+  }
+
+  .card:nth-last-of-type(1) {
+    grid-column: 3;
+    background-color: $very-dark-cyan;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @include set-button-style($very-dark-cyan);
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .card-container {
+    max-width: 90%;
+  }
+}
+
+@import "mobile";
