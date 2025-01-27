@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/usman-97/three-column-preview-card](https://github.com/usman-97/three-column-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://usman-97.github.io/three-column-preview-card/](https://usman-97.github.io/three-column-preview-card/)
 
 ## My process
 
